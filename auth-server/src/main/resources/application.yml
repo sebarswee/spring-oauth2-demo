@@ -9,7 +9,6 @@ spring:
     user:
       name: user
       password: $2a$10$bv/dyhgcpYzHIzzM.Ivr2O.rA.v2JZeP4KKOeRAMDYehzW0O8rO0K
-      roles: ADMIN
 # log
 logging:
   level:
