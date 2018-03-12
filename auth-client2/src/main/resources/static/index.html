@@ -5,24 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <title>Demo</title>
+    <title>Demo2</title>
     <base href="/">
-    <link type="text/css" href="/demo/webjars/bootstrap/css/bootstrap.min.css">
-    <script src="/demo/webjars/jquery/jquery.min.js"></script>
-    <script src="/demo/webjars/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/demo/webjars/js-cookie/js.cookie.js"></script>
+    <link type="text/css" href="/demo2/webjars/bootstrap/css/bootstrap.min.css">
+    <script src="/demo2/webjars/jquery/jquery.min.js"></script>
+    <script src="/demo2/webjars/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/demo2/webjars/js-cookie/js.cookie.js"></script>
 </head>
 <body>
-<h1>Login</h1>
+<h1>Demo2 - Login</h1>
 <div class="container unauthenticated">
-    Login: <a href="/demo/login">click here</a>
+    Login: <a href="/demo2/login">click here</a>
 </div>
 <div class="container authenticated" style="display: none">
     Logged in as: <span id="user"></span>
-    View Demo2: <a href="http://localhost:8002/demo2/login">click here</a>
 </div>
 <script type="text/javascript">
-    $.get("/demo/user", function(data) {
+    $.get("/demo2/user", function(data) {
         $("#user").html(data.name);
         $(".unauthenticated").hide();
         $(".authenticated").show();

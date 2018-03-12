@@ -1,0 +1,20 @@
+# server
+server:
+  port: 8002
+  servlet:
+    context-path: /demo2
+# security
+security:
+  oauth2:
+    client:
+      client-id: client2
+      client-secret: secret2
+      access-token-uri: http://localhost:9001/uaa/oauth/token
+      user-authorization-uri: http://localhost:9001/uaa/oauth/authorize
+    resource:
+      user-info-uri: http://localhost:9001/uaa/user
+      prefer-token-info: false
+# log
+logging:
+  level:
+    org.springframework.security: DEBUG
